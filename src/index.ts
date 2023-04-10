@@ -1,5 +1,6 @@
 import { AppConfig } from "./app.config";
-import { LoginApi } from "./le-fourgon/login-api/login.api";
+import { LoginApi } from "./le-fourgon/login/login.api";
+import { CategoriesApi } from "./le-fourgon/categories/categories.api";
 
 (async () => {
   const config = new AppConfig();
@@ -7,5 +8,9 @@ import { LoginApi } from "./le-fourgon/login-api/login.api";
   const accessToken = await loginApi.getAccessToken(
     config.leFourgonCredentials()
   );
-  console.dir(accessToken, { depth: 1000 });
+
+  const categoriesApi = new CategoriesApi(accessToken);
+  const categories = await categoriesApi.getCategories();
+
+  console.dir(categories, { depth: 1000 });
 })();
