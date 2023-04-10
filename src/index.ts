@@ -3,6 +3,7 @@ import { LoginApi } from "./le-fourgon/login/login.api";
 import { ProductsApi } from "./le-fourgon/products/products.api";
 import { LeFourgonProductsResponseToDomainMapper } from "./le-fourgon/products/le-fourgon-products-response-to-domain.mapper";
 import { PaginationPage } from "./le-fourgon/products/domain/pagination-page.vo";
+import { CategoryId } from "./le-fourgon/categories/domain/category-id.vo";
 
 (async () => {
   const config = new AppConfig();
@@ -19,10 +20,12 @@ import { PaginationPage } from "./le-fourgon/products/domain/pagination-page.vo"
     new LeFourgonProductsResponseToDomainMapper()
   );
 
-  const products = await productsApi.getProducts(
+  const beerCategoryId = CategoryId.of(1);
+  const products = await productsApi.getProductsByCategory(
+    beerCategoryId,
     new PaginationPage({
       offset: 0,
-      limit: 20,
+      limit: 5,
     })
   );
 

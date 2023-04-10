@@ -8,6 +8,7 @@ import { AlcoholLevel } from "./alcohol-level.vo";
 import { DomainObject } from "../../../shared/domain-object";
 import { Availability } from "./availability.vo";
 import { ProductVolume } from "./product-volume.vo";
+import { ProductPackaging } from "./product-packaging.vo";
 
 interface ProductConstructorParams {
   id: ProductId;
@@ -21,6 +22,7 @@ interface ProductConstructorParams {
   alcoholLevel: AlcoholLevel;
   availability: Availability;
   volume: ProductVolume;
+  packaging: ProductPackaging
 }
 
 export class Product extends DomainObject<"Product"> {
@@ -35,6 +37,7 @@ export class Product extends DomainObject<"Product"> {
   readonly alcoholLevel: AlcoholLevel;
   readonly availability: Availability;
   readonly volume: ProductVolume;
+  readonly packaging: ProductPackaging;
 
   constructor({
     id,
@@ -48,6 +51,7 @@ export class Product extends DomainObject<"Product"> {
     alcoholLevel,
     availability,
     volume,
+    packaging,
   }: ProductConstructorParams) {
     super();
     this.id = id;
@@ -61,5 +65,6 @@ export class Product extends DomainObject<"Product"> {
     this.alcoholLevel = alcoholLevel;
     this.availability = availability;
     this.volume = volume;
+    this.packaging = packaging;
   }
 }

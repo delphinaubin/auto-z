@@ -4,6 +4,8 @@ import { ProductsResult } from "./domain/products-result.vo";
 import { LeFourgonProductsResponse } from "./le-fourgon-products.response";
 import { PaginationPage } from "./domain/pagination-page.vo";
 import { LeFourgonProductsResponseToDomainMapper } from "./le-fourgon-products-response-to-domain.mapper";
+import { CategoryId } from "../categories/domain/category-id.vo";
+import { TextSearchQuery } from "./domain/text-search-query.vo";
 
 export class ProductsApi {
   private axiosInstance: AxiosInstance;
@@ -24,6 +26,36 @@ export class ProductsApi {
     const { data: productsResponse } =
       await this.axiosInstance.get<LeFourgonProductsResponse>("/products", {
         params: {
+          limit: page.limit,
+          offset: page.offset,
+        },
+      });
+    return this.mapper.toDomainProductsResult(productsResponse);
+  }
+
+  async getProductsByCategory(
+    categoryId: CategoryId,
+    page: PaginationPage
+  ): Promise<ProductsResult> {
+    const { data: productsResponse } =
+      await this.axiosInstance.get<LeFourgonProductsResponse>("/products", {
+        params: {
+          cat: categoryId.value,
+          limit: page.limit,
+          offset: page.offset,
+        },
+      });
+    return this.mapper.toDomainProductsResult(productsResponse);
+  }
+
+  async searchProduct(
+    searchQuery: TextSearchQuery,
+    page: PaginationPage
+  ): Promise<ProductsResult> {
+    const { data: productsResponse } =
+      await this.axiosInstance.get<LeFourgonProductsResponse>("/products", {
+        params: {
+          search: searchQuery.value,
           limit: page.limit,
           offset: page.offset,
         },

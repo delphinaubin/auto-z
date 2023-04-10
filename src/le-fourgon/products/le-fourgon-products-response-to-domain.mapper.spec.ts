@@ -13,6 +13,8 @@ import { AlcoholLevel } from "./domain/alcohol-level.vo";
 import { Availability } from "./domain/availability.vo";
 import { ProductVolume } from "./domain/product-volume.vo";
 import { PaginatedResult } from "./domain/paginated-result.vo";
+import { ProductPackaging } from "./domain/product-packaging.vo";
+import { ProductPackagingId } from "./domain/product-packaging-id.vo";
 
 describe("toDomainProductsResult", () => {
   it("maps a response to domain entities", () => {
@@ -40,6 +42,12 @@ describe("toDomainProductsResult", () => {
           totalDepositPrice: 0.1,
           alcoholLevel: 4.5,
           isAvailable: true,
+          packageType: {
+            id: 1,
+            name: "Grands Formats (x12)",
+            capacity: 12,
+            depositPrice: 3,
+          },
         },
       ],
     };
@@ -52,11 +60,9 @@ describe("toDomainProductsResult", () => {
       new PaginatedResult({
         offset: 0,
         limit: 10,
-        count: 2
+        count: 2,
       })
     );
-
-
 
     expect(result.products).toHaveLength(1);
 
@@ -92,5 +98,18 @@ describe("toDomainProductsResult", () => {
     expect(product.volume).toBeInstanceOf(ProductVolume);
     expect(product.volume.quantity).toEqual(33);
     expect(product.volume.unit).toEqual("cl");
+
+    expect(product.packaging).toBeInstanceOf(ProductPackaging);
+    expect(product.packaging.id).toStrictEqual(ProductPackagingId.of(1));
+    expect(product.packaging.name).toStrictEqual(
+      Name.of("Grands Formats (x12)")
+    );
+    expect(product.packaging.capacity).toStrictEqual(ProductQuantity.of(12));
+    expect(product.packaging.depositPrice).toBeInstanceOf(Price);
+    expect(product.packaging.depositPrice.vat).toStrictEqual(Vat.NO_VAT);
+    expect(product.packaging.depositPrice.amountExcludingVat).toStrictEqual(
+      Amount.of(3)
+    );
   });
 });
+

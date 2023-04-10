@@ -13,6 +13,8 @@ import { Name } from "../domain/name.vo";
 import { Availability } from "./domain/availability.vo";
 import { ProductVolume } from "./domain/product-volume.vo";
 import { PaginatedResult } from "./domain/paginated-result.vo";
+import { ProductPackaging } from "./domain/product-packaging.vo";
+import { ProductPackagingId } from "./domain/product-packaging-id.vo";
 
 export class LeFourgonProductsResponseToDomainMapper {
   toDomainProductsResult(
@@ -40,6 +42,15 @@ export class LeFourgonProductsResponseToDomainMapper {
           volume: new ProductVolume({
             quantity: product.volume,
             unit: product.unit,
+          }),
+          packaging: new ProductPackaging({
+            id: ProductPackagingId.of(product.packageType.id),
+            name: Name.of(product.packageType.name),
+            depositPrice: new Price({
+              amountExcludingVat: Amount.of(product.packageType.depositPrice),
+              vat: Vat.NO_VAT,
+            }),
+            capacity: ProductQuantity.of(product.packageType.capacity),
           }),
         })
     );

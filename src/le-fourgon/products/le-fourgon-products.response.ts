@@ -25,4 +25,13 @@ interface LeFourgonProduct {
   maxOrderable: number;
 
   isAvailable: boolean;
+
+  packageType: LeFourgonProductPackageType;
+}
+
+interface LeFourgonProductPackageType {
+  id: number;
+  name: string;
+  capacity: number;
+  depositPrice: number;
 }
