@@ -1,6 +1,8 @@
 import { AppConfig } from "./app.config";
 import { LoginApi } from "./le-fourgon/login/login.api";
-import { CategoriesApi } from "./le-fourgon/categories/categories.api";
+import { ProductsApi } from "./le-fourgon/products/products.api";
+import { LeFourgonProductsResponseToDomainMapper } from "./le-fourgon/products/le-fourgon-products-response-to-domain.mapper";
+import { PaginationPage } from "./le-fourgon/products/domain/pagination-page.vo";
 
 (async () => {
   const config = new AppConfig();
@@ -9,8 +11,20 @@ import { CategoriesApi } from "./le-fourgon/categories/categories.api";
     config.leFourgonCredentials()
   );
 
-  const categoriesApi = new CategoriesApi(accessToken);
-  const categories = await categoriesApi.getCategories();
+  // const categoriesApi = new CategoriesApi(accessToken);
+  // const categories = await categoriesApi.getCategories();
 
-  console.dir(categories, { depth: 1000 });
+  const productsApi = new ProductsApi(
+    accessToken,
+    new LeFourgonProductsResponseToDomainMapper()
+  );
+
+  const products = await productsApi.getProducts(
+    new PaginationPage({
+      offset: 0,
+      limit: 20,
+    })
+  );
+
+  console.dir(products, { depth: 1000 });
 })();

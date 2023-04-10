@@ -3,9 +3,9 @@ import { UserToken } from "../login/domain/user-token.vo";
 import { Category } from "./domain/category.vo";
 import { LeFourgonCategoriesResponse } from "./le-fourgon-categories.response";
 import { CategoryId } from "./domain/category-id.vo";
-import { Name } from "./domain/name.vo";
-import { Description } from "./domain/description.vo";
-import { ImageUrl } from "./domain/image-url.vo";
+import { Name } from "../domain/name.vo";
+import { Description } from "../domain/description.vo";
+import { ImageUrl } from "../domain/image-url.vo";
 
 export class CategoriesApi {
   private axiosInstance: AxiosInstance;

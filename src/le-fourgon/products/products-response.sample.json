@@ -1,0 +1,406 @@
+{
+  "products": [
+    {
+      "image1": "https://static.lefourgon.com/product_image/6422e86ab0ea5650464882.png",
+      "thumb150": "https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6422e86ab0ea5650464882.png",
+      "id": 1418,
+      "name": "Moulins d'Ascq Printemps Bio",
+      "subName": "Bi\u00e8re de Printemps",
+      "description": "<div>La Moulins d'Ascq printemps est une bi\u00e8re blonde, \"single hop\" (un seul houblon utilis\u00e9 dans la recette). En bouche, une note l\u00e9g\u00e8re et fruit\u00e9e. Cette bi\u00e8re de saison est parfaite pour accompagner les premiers barbecues et les ap\u00e9ritifs en terrasse.</div>",
+      "price": 2,
+      "quantity": 1,
+      "tva": 0.2,
+      "isLocal": true,
+      "depositPrice": 0.1,
+      "category": {
+        "id": 1,
+        "name": "Bi\u00e8re",
+        "icon": "https://static.lefourgon.com/icons/63873e3ed22fe512280295.svg",
+        "image": "https://static.lefourgon.com/category/635a339598f16448563242.png"
+      },
+      "packageType": {
+        "id": 6,
+        "name": "Petits Formats (x20)",
+        "capacity": 20,
+        "depositPrice": 3,
+        "totalDeposit": 5
+      },
+      "producer": {
+        "name": "Moulins d'Ascq"
+      },
+      "isDiscountable": true,
+      "volume": 33,
+      "ingredients": null,
+      "priceTTC": 2.4,
+      "volumePrice": 7.27,
+      "maxOrderable": 121,
+      "totalDepositPrice": 0.1,
+      "isMultiAddCartEnabled": true,
+      "discountPrice": [
+        {
+          "quantity": 10,
+          "percent": 1,
+          "price": 1.98,
+          "priceTTC": 2.38
+        },
+        {
+          "quantity": 20,
+          "percent": 2,
+          "price": 1.96,
+          "priceTTC": 2.35
+        },
+        {
+          "quantity": 40,
+          "percent": 3,
+          "price": 1.94,
+          "priceTTC": 2.33
+        }
+      ],
+      "tags": [
+        {
+          "name": "Produits locaux"
+        },
+        {
+          "name": "Bi\u00e8re blonde"
+        },
+        {
+          "name": "Bi\u00e8re Bio"
+        },
+        {
+          "name": "Bi\u00e8re \u00e9ph\u00e9m\u00e8re"
+        },
+        {
+          "name": "De printemps"
+        }
+      ],
+      "unit": "cl",
+      "alcoholLevel": 4.5,
+      "isFresh": false,
+      "isBio": true,
+      "increment": 1,
+      "isAvailable": true,
+      "isLowStock": false
+    },
+    {
+      "image1": "https://static.lefourgon.com/product_image/6426e8204f403555903263.png",
+      "thumb150": "https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6426e8204f403555903263.png",
+      "id": 1417,
+      "name": "3 Monts Printemps Bio",
+      "subName": "Pale Ale",
+      "description": "<div>Bi\u00e8re blonde bio rafra\u00eechissante aux notes citronn\u00e9es dont la recette est \u00e9labor\u00e9e avec les houblons Magnum et Cascade cultiv\u00e9s \u00e0 Saint Sylvestre Cappel \u00e0 proximit\u00e9 de la Brasserie.</div>",
+      "price": 2.917,
+      "quantity": 1,
+      "tva": 0.2,
+      "isLocal": true,
+      "depositPrice": 0.2,
+      "category": {
+        "id": 1,
+        "name": "Bi\u00e8re",
+        "icon": "https://static.lefourgon.com/icons/63873e3ed22fe512280295.svg",
+        "image": "https://static.lefourgon.com/category/635a339598f16448563242.png"
+      },
+      "packageType": {
+        "id": 1,
+        "name": "Grands Formats (x12)",
+        "capacity": 12,
+        "depositPrice": 3,
+        "totalDeposit": 5.4
+      },
+      "producer": {
+        "name": "Brasserie 3 monts"
+      },
+      "isDiscountable": true,
+      "volume": 75,
+      "ingredients": null,
+      "priceTTC": 3.5,
+      "volumePrice": 4.67,
+      "maxOrderable": 243,
+      "totalDepositPrice": 0.2,
+      "isMultiAddCartEnabled": true,
+      "discountPrice": [
+        {
+          "quantity": 6,
+          "percent": 1,
+          "price": 2.89,
+          "priceTTC": 3.47
+        },
+        {
+          "quantity": 12,
+          "percent": 2,
+          "price": 2.86,
+          "priceTTC": 3.43
+        },
+        {
+          "quantity": 24,
+          "percent": 3,
+          "price": 2.83,
+          "priceTTC": 3.4
+        }
+      ],
+      "tags": [
+        {
+          "name": "Produits locaux"
+        },
+        {
+          "name": "Produit artisanal"
+        },
+        {
+          "name": "Bi\u00e8re blonde"
+        },
+        {
+          "name": "De printemps"
+        }
+      ],
+      "unit": "cl",
+      "alcoholLevel": 5.5,
+      "isFresh": false,
+      "isBio": true,
+      "increment": 1,
+      "isAvailable": true,
+      "isLowStock": false
+    },
+    {
+      "image1": "https://static.lefourgon.com/product_image/63ebb6f28ce2d318125423.png",
+      "thumb150": "https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63ebb6f28ce2d318125423.png",
+      "id": 1324,
+      "name": "La Belle Saison Bio",
+      "subName": "Saison",
+      "description": "<div>La Belle Saison est une bi\u00e8re produite par la Brasserie BarB \u00e0 Thiant dans le nord de la France.<br>Cette bi\u00e8re de bl\u00e9 titrant \u00e0 5,5% d\u2019alcool est marqu\u00e9e par des notes subtiles de citron. La partenaire id\u00e9ale des beaux jours, alors, foncez !</div>",
+      "price": 3.833,
+      "quantity": 1,
+      "tva": 0.2,
+      "isLocal": true,
+      "depositPrice": 0.2,
+      "category": {
+        "id": 1,
+        "name": "Bi\u00e8re",
+        "icon": "https://static.lefourgon.com/icons/63873e3ed22fe512280295.svg",
+        "image": "https://static.lefourgon.com/category/635a339598f16448563242.png"
+      },
+      "packageType": {
+        "id": 1,
+        "name": "Grands Formats (x12)",
+        "capacity": 12,
+        "depositPrice": 3,
+        "totalDeposit": 5.4
+      },
+      "producer": {
+        "name": "Brasserie La Barb"
+      },
+      "isDiscountable": true,
+      "volume": 75,
+      "ingredients": null,
+      "priceTTC": 4.6,
+      "volumePrice": 6.13,
+      "maxOrderable": 0,
+      "totalDepositPrice": 0.2,
+      "isMultiAddCartEnabled": true,
+      "discountPrice": [
+        {
+          "quantity": 6,
+          "percent": 1,
+          "price": 3.79,
+          "priceTTC": 4.55
+        },
+        {
+          "quantity": 12,
+          "percent": 2,
+          "price": 3.76,
+          "priceTTC": 4.51
+        },
+        {
+          "quantity": 24,
+          "percent": 3,
+          "price": 3.72,
+          "priceTTC": 4.46
+        }
+      ],
+      "tags": [
+        {
+          "name": "Produits locaux"
+        },
+        {
+          "name": "Bio"
+        },
+        {
+          "name": "Bi\u00e8re blonde"
+        },
+        {
+          "name": "Bi\u00e8re Bio"
+        },
+        {
+          "name": "De printemps"
+        }
+      ],
+      "unit": "cl",
+      "alcoholLevel": 5.5,
+      "isFresh": false,
+      "isBio": true,
+      "increment": 1,
+      "isAvailable": false,
+      "isLowStock": true
+    },
+    {
+      "image1": "https://static.lefourgon.com/product_image/622f6677a02b7556273031.png",
+      "thumb150": "https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/622f6677a02b7556273031.png",
+      "id": 396,
+      "name": "Moulins d'Ascq Printemps Bio",
+      "subName": "Bi\u00e8re de Printemps",
+      "description": "<div>La Moulins d'Ascq printemps est une bi\u00e8re blonde, \"single hop\" (un seul houblon utilis\u00e9 dans la recette). En bouche, une note l\u00e9g\u00e8re et fruit\u00e9e. Cette bi\u00e8re de saison est parfaite pour accompagner les premiers barbecues et les ap\u00e9ritifs en terrasse.</div>",
+      "price": 4,
+      "quantity": 1,
+      "tva": 0.2,
+      "isLocal": true,
+      "depositPrice": 0.2,
+      "category": {
+        "id": 1,
+        "name": "Bi\u00e8re",
+        "icon": "https://static.lefourgon.com/icons/63873e3ed22fe512280295.svg",
+        "image": "https://static.lefourgon.com/category/635a339598f16448563242.png"
+      },
+      "packageType": {
+        "id": 1,
+        "name": "Grands Formats (x12)",
+        "capacity": 12,
+        "depositPrice": 3,
+        "totalDeposit": 5.4
+      },
+      "producer": {
+        "name": "Moulins d'Ascq"
+      },
+      "isDiscountable": true,
+      "volume": 75,
+      "ingredients": null,
+      "priceTTC": 4.8,
+      "volumePrice": 6.4,
+      "maxOrderable": 291,
+      "totalDepositPrice": 0.2,
+      "isMultiAddCartEnabled": true,
+      "discountPrice": [
+        {
+          "quantity": 6,
+          "percent": 1,
+          "price": 3.96,
+          "priceTTC": 4.75
+        },
+        {
+          "quantity": 12,
+          "percent": 2,
+          "price": 3.92,
+          "priceTTC": 4.7
+        },
+        {
+          "quantity": 24,
+          "percent": 3,
+          "price": 3.88,
+          "priceTTC": 4.66
+        }
+      ],
+      "tags": [
+        {
+          "name": "Produits locaux"
+        },
+        {
+          "name": "Produits phares"
+        },
+        {
+          "name": "Bi\u00e8re Bio"
+        },
+        {
+          "name": "Bi\u00e8re \u00e9ph\u00e9m\u00e8re"
+        },
+        {
+          "name": "De printemps"
+        }
+      ],
+      "unit": "cl",
+      "alcoholLevel": 4.5,
+      "isFresh": false,
+      "isBio": true,
+      "increment": 1,
+      "isAvailable": true,
+      "isLowStock": false
+    },
+    {
+      "image1": "https://static.lefourgon.com/product_image/6426e835a1999966762787.png",
+      "thumb150": "https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6426e835a1999966762787.png",
+      "id": 1483,
+      "name": "PVL Printemps",
+      "subName": "India Pale Ale",
+      "description": "<div>Vous savez que pour vous, on ferait l\u2019impossible. Tenez, pour notre bi\u00e8re de printemps, cette ann\u00e9e encore, on a mis la fra\u00eecheur en bouteille. Oui, rien que \u00e7a ! Gr\u00e2ce \u00e0 une rigoureuse s\u00e9lection de houblons aux notes d\u2019agrumes, de baies fruit\u00e9es et aux accents tropicaux, nous avons cr\u00e9\u00e9 l\u2019IPA parfaite, \u00e0 la fois l\u00e9g\u00e8re et savoureuse, id\u00e9ale pour vous rafra\u00eechir. Impossible n\u2019est pas PVL !<br><br>M\u00e9daill\u00e9e d'or au concours internationale de Lyon en 2022</div>",
+      "price": 5.417,
+      "quantity": 1,
+      "tva": 0.2,
+      "isLocal": true,
+      "depositPrice": 0.2,
+      "category": {
+        "id": 1,
+        "name": "Bi\u00e8re",
+        "icon": "https://static.lefourgon.com/icons/63873e3ed22fe512280295.svg",
+        "image": "https://static.lefourgon.com/category/635a339598f16448563242.png"
+      },
+      "packageType": {
+        "id": 1,
+        "name": "Grands Formats (x12)",
+        "capacity": 12,
+        "depositPrice": 3,
+        "totalDeposit": 5.4
+      },
+      "producer": {
+        "name": "Brasserie du Pav\u00e9"
+      },
+      "isDiscountable": true,
+      "volume": 75,
+      "ingredients": null,
+      "priceTTC": 6.5,
+      "volumePrice": 8.67,
+      "maxOrderable": 105,
+      "totalDepositPrice": 0.2,
+      "isMultiAddCartEnabled": true,
+      "discountPrice": [
+        {
+          "quantity": 6,
+          "percent": 1,
+          "price": 5.36,
+          "priceTTC": 6.44
+        },
+        {
+          "quantity": 12,
+          "percent": 2,
+          "price": 5.31,
+          "priceTTC": 6.37
+        },
+        {
+          "quantity": 24,
+          "percent": 3,
+          "price": 5.25,
+          "priceTTC": 6.31
+        }
+      ],
+      "tags": [
+        {
+          "name": "Produits locaux"
+        },
+        {
+          "name": "Produit artisanal"
+        },
+        {
+          "name": "Bi\u00e8re IPA"
+        },
+        {
+          "name": "De printemps"
+        }
+      ],
+      "unit": "cl",
+      "alcoholLevel": 5.5,
+      "isFresh": false,
+      "isBio": false,
+      "increment": 1,
+      "isAvailable": true,
+      "isLowStock": false
+    }
+  ],
+  "offset": 0,
+  "limit": 10,
+  "count": 5
+}

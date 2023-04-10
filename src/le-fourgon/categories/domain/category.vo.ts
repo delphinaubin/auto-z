@@ -1,8 +1,8 @@
 import { DomainObject } from "../../../shared/domain-object";
 import { CategoryId } from "./category-id.vo";
-import { Description } from "./description.vo";
-import { ImageUrl } from "./image-url.vo";
-import { Name } from "./name.vo";
+import { Description } from "../../domain/description.vo";
+import { ImageUrl } from "../../domain/image-url.vo";
+import { Name } from "../../domain/name.vo";
 
 interface CategoryConstructorParams {
   id: CategoryId;
