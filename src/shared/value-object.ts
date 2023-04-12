@@ -18,34 +18,3 @@ export abstract class ValueObject<T, Type> extends DomainObject<Type> {
     return new this(value);
   }
 }
-
-export abstract class NullableValueObject<
-  T,
-  Type,
-  NullType
-> extends ValueObject<T | NullType, Type> {
-  protected abstract readonly nullValue: NullType;
-
-  isSet(): this is ValueObject<T, Type> {
-    return this.value !== this.nullValue;
-  }
-
-  getOr<NullValue>(valueIfNotSet: NullValue): T | NullValue {
-    if (this.isSet()) {
-      return this.value;
-    }
-
-    return valueIfNotSet;
-  }
-
-  mapOr<NullValue, TTransformed>(
-    valueIfNotSet: NullValue,
-    transform: (value: T) => TTransformed
-  ): TTransformed | NullValue {
-    if (this.isSet()) {
-      return transform(this.value);
-    }
-
-    return valueIfNotSet;
-  }
-}
