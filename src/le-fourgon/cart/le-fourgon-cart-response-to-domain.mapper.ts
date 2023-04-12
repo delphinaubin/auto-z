@@ -21,10 +21,8 @@ import { CartResume } from "./domain/cart-resume";
 
 export class LeFourgonCartResponseToDomainMapper {
   toDomainCart(leFourgonCartResponse: LeFourgonCartResponse) {
-    const { cart, total, isValidable } = leFourgonCartResponse;
-
-    const packagingWithProducts = cart.map(
-      ({ package: packaging }): CartPackagingWithProducts => {
+    const packagingWithProducts = leFourgonCartResponse.cart.map(
+      ({ package: packaging, products }): CartPackagingWithProducts => {
         return new CartPackagingWithProducts({
           nbProducts: ProductQuantity.of(packaging.nbItems),
           nbPackages: PackageQuantity.of(packaging.nbPackages),
@@ -38,7 +36,7 @@ export class LeFourgonCartResponseToDomainMapper {
             }),
           }),
           nbSpaceLeft: ProductQuantity.of(packaging.nbSpaceLeft),
-          productLines: packaging.products.map((line) => {
+          productLines: products.map((line) => {
             const product = line.product;
             return new CartProductLine({
               totalExludingVat: Amount.of(line.total),
@@ -72,14 +70,18 @@ export class LeFourgonCartResponseToDomainMapper {
       }
     );
     const resume = new CartResume({
-      totalDeposit: Amount.of(total.deposit),
-      totalProductsExcludingVat: Amount.of(total.ht),
-      totalProductsIncludingVat: Amount.of(total.ttc),
-      totalProductsWithDepositIncludingVat: Amount.of(total.ttcWithDeposit),
+      totalDeposit: Amount.of(leFourgonCartResponse.total.deposit),
+      totalProductsExcludingVat: Amount.of(leFourgonCartResponse.total.ht),
+      totalProductsIncludingVat: Amount.of(leFourgonCartResponse.total.ttc),
+      totalProductsWithDepositIncludingVat: Amount.of(
+        leFourgonCartResponse.total.ttcWithDeposit
+      ),
     });
 
     return new Cart({
-      abilityToValidate: AbilityToValidate.of(isValidable),
+      abilityToValidate: AbilityToValidate.of(
+        leFourgonCartResponse.isValidable
+      ),
       packagingWithProducts,
       resume,
     });

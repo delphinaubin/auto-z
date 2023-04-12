@@ -6,15 +6,15 @@ export interface LeFourgonCartResponse {
       nbItems: number;
       nbPackages: number;
       nbSpaceLeft: number;
-      products: LeFourgonCartProductLine[];
     };
+    products: LeFourgonCartProductLine[];
   }[];
   total: {
-    ht: number
-    ttc: number
-    deposit: number
-    ttcWithDeposit: number
-  }
+    ht: number;
+    ttc: number;
+    deposit: number;
+    ttcWithDeposit: number;
+  };
 }
 
 interface LeFourgonPackageType {
