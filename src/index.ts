@@ -2,6 +2,8 @@ import { AppConfig } from "./app.config";
 import { LoginApi } from "./le-fourgon/login/login.api";
 import { CartApi } from "./le-fourgon/cart/cart.api";
 import { LeFourgonCartResponseToDomainMapper } from "./le-fourgon/cart/le-fourgon-cart-response-to-domain.mapper";
+import { ProductId } from "./le-fourgon/products/domain/product-id.vo";
+import { ProductQuantity } from "./le-fourgon/products/domain/product-quantity.vo";
 
 (async () => {
   const config = new AppConfig();
@@ -33,7 +35,12 @@ import { LeFourgonCartResponseToDomainMapper } from "./le-fourgon/cart/le-fourgo
     accessToken,
     new LeFourgonCartResponseToDomainMapper()
   );
-  const cart = await cartApi.getCart();
+  // const cart = await cartApi.getCart();
 
-  console.dir(cart, { depth: 1000 });
+  const jupilerId = ProductId.of(86);
+  const response = await cartApi.setProductQuantity(
+    jupilerId,
+    ProductQuantity.of(2)
+  );
+  console.dir(response, { depth: 1000 });
 })();
