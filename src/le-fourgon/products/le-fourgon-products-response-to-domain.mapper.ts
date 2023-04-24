@@ -1,4 +1,8 @@
-import { LeFourgonProductsResponse } from "./le-fourgon-products.response";
+import {
+  LeFourgonProduct,
+  LeFourgonProductPackageType,
+  LeFourgonProductsResponse,
+} from "./le-fourgon-products.response";
 import { ProductsResult } from "./domain/products-result.vo";
 import { Product } from "./domain/product.vo";
 import { ProductId } from "./domain/product-id.vo";
@@ -16,43 +20,57 @@ import { PaginatedResult } from "./domain/paginated-result.vo";
 import { ProductPackaging } from "./domain/product-packaging.vo";
 import { ProductPackagingId } from "./domain/product-packaging-id.vo";
 
+export function leFourgonProductPackagingToDomain(
+  packageType: LeFourgonProductPackageType
+) {
+  return new ProductPackaging({
+    id: ProductPackagingId.of(packageType.id),
+    name: Name.of(packageType.name),
+    depositPrice: new Price({
+      amountExcludingVat: Amount.of(packageType.depositPrice),
+      vat: Vat.NO_VAT,
+    }),
+    capacity: ProductQuantity.of(packageType.capacity),
+  });
+}
+
+export function leFourgonProductToDomainMapper(
+  product: LeFourgonProduct
+): Product {
+  return new Product({
+    id: ProductId.of(product.id),
+    name: Name.of(product.name),
+    description: Description.of(product.description),
+    image: ImageUrl.of(product.image1),
+    thumbnail: ImageUrl.of(product.thumb150),
+    price: new Price({
+      amountExcludingVat: Amount.of(product.price),
+      vat: Vat.of(product.tva),
+    }),
+    depositPrice: new Price({
+      amountExcludingVat: Amount.of(product.totalDepositPrice),
+      vat: Vat.NO_VAT,
+    }),
+    alcoholLevel: AlcoholLevel.of(product.alcoholLevel || 0),
+    maxOrderable: ProductQuantity.of(product.maxOrderable),
+    availability: Availability.of(product.isAvailable),
+    volume: new ProductVolume({
+      quantity: product.volume,
+      unit: product.unit,
+    }),
+    packaging:
+      product.packageType === null
+        ? null
+        : leFourgonProductPackagingToDomain(product.packageType),
+  });
+}
+
 export class LeFourgonProductsResponseToDomainMapper {
   toDomainProductsResult(
     leFourgonProductsResponse: LeFourgonProductsResponse
   ): ProductsResult {
     const products = leFourgonProductsResponse.products.map(
-      (product): Product =>
-        new Product({
-          id: ProductId.of(product.id),
-          name: Name.of(product.name),
-          description: Description.of(product.description),
-          image: ImageUrl.of(product.image1),
-          thumbnail: ImageUrl.of(product.thumb150),
-          price: new Price({
-            amountExcludingVat: Amount.of(product.price),
-            vat: Vat.of(product.tva),
-          }),
-          depositPrice: new Price({
-            amountExcludingVat: Amount.of(product.totalDepositPrice),
-            vat: Vat.NO_VAT,
-          }),
-          alcoholLevel: AlcoholLevel.of(product.alcoholLevel || 0),
-          maxOrderable: ProductQuantity.of(product.maxOrderable),
-          availability: Availability.of(product.isAvailable),
-          volume: new ProductVolume({
-            quantity: product.volume,
-            unit: product.unit,
-          }),
-          packaging: new ProductPackaging({
-            id: ProductPackagingId.of(product.packageType.id),
-            name: Name.of(product.packageType.name),
-            depositPrice: new Price({
-              amountExcludingVat: Amount.of(product.packageType.depositPrice),
-              vat: Vat.NO_VAT,
-            }),
-            capacity: ProductQuantity.of(product.packageType.capacity),
-          }),
-        })
+      leFourgonProductToDomainMapper
     );
 
     const pagination = new PaginatedResult({

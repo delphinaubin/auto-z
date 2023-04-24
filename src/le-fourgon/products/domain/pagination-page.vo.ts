@@ -11,6 +11,11 @@ export class PaginationPage extends DomainObject<"PaginationPage"> {
 
   constructor({ limit, offset }: PaginationPageConstructorParams) {
     super();
+    if (limit > 100) {
+      throw new Error(
+        `Cannot create a pagination with a limit > 100 (${limit} was given)`
+      );
+    }
     this.limit = limit;
     this.offset = offset;
   }

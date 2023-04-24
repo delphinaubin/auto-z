@@ -1,0 +1,207 @@
+{
+  "isValidable": false,
+  "cart": [
+    {
+      "package": {
+        "packageType": {
+          "id": 6,
+          "name": "Petits Formats (x20)",
+          "capacity": 20,
+          "depositPrice": 3
+        },
+        "nbItems": 1,
+        "nbPackages": 1,
+        "nbSpaceLeft": 19
+      },
+      "products": [
+        {
+          "product": {
+            "image1": "https://static.lefourgon.com/product_image/62a350b525328543369600.png",
+            "thumb150": "https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62a350b525328543369600.png",
+            "id": 86,
+            "name": "Jupiler Blonde",
+            "price": 0.96,
+            "quantity": 1,
+            "tva": 0.2,
+            "depositPrice": 0.1,
+            "isDiscountable": true,
+            "volume": 25,
+            "priceTTC": 1.15,
+            "volumePrice": 3.56,
+            "maxOrderable": 500,
+            "totalDepositPrice": 0.1,
+            "isMultiAddCartEnabled": true,
+            "discountPrice": [
+              {
+                "quantity": 10,
+                "percent": 1,
+                "price": 0.95,
+                "priceTTC": 1.14
+              },
+              {
+                "quantity": 20,
+                "percent": 2,
+                "price": 0.94,
+                "priceTTC": 1.13
+              },
+              {
+                "quantity": 40,
+                "percent": 3,
+                "price": 0.93,
+                "priceTTC": 1.12
+              }
+            ],
+            "unit": "cl",
+            "alcoholLevel": 5.2,
+            "isFresh": false,
+            "isBio": false,
+            "increment": 1,
+            "isAvailable": true,
+            "isLowStock": false
+          },
+          "quantity": 1,
+          "nbItems": 1,
+          "total": 0.96,
+          "totalTTC": 1.15,
+          "totalDeposit": 0.1,
+          "appliedPrice": 0.96,
+          "appliedPriceTTC": 1.15,
+          "isLocked": false
+        }
+      ]
+    },
+    {
+      "package": {
+        "packageType": {
+          "id": 1,
+          "name": "Grands Formats (x12)",
+          "capacity": 12,
+          "depositPrice": 3
+        },
+        "nbItems": 10,
+        "nbPackages": 1,
+        "nbSpaceLeft": 2
+      },
+      "products": [
+        {
+          "product": {
+            "image1": "https://static.lefourgon.com/product_image/63ad612d7e491741779473.png",
+            "thumb150": "https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63ad612d7e491741779473.png",
+            "id": 1119,
+            "name": "New Queen In Town",
+            "price": 4.25,
+            "quantity": 1,
+            "tva": 0.2,
+            "depositPrice": 0.2,
+            "isDiscountable": true,
+            "volume": 75,
+            "priceTTC": 5.1,
+            "volumePrice": 5.43,
+            "maxOrderable": 354,
+            "totalDepositPrice": 0.2,
+            "isMultiAddCartEnabled": true,
+            "discountPrice": [
+              {
+                "quantity": 6,
+                "percent": 1,
+                "price": 4.21,
+                "priceTTC": 5.05
+              },
+              {
+                "quantity": 12,
+                "percent": 2,
+                "price": 4.17,
+                "priceTTC": 5
+              },
+              {
+                "quantity": 24,
+                "percent": 3,
+                "price": 4.12,
+                "priceTTC": 4.95
+              }
+            ],
+            "unit": "cl",
+            "alcoholLevel": 4.8,
+            "isFresh": false,
+            "isBio": false,
+            "increment": 1,
+            "isAvailable": true,
+            "isLowStock": false
+          },
+          "quantity": 5,
+          "nbItems": 5,
+          "total": 21.25,
+          "totalTTC": 25.5,
+          "totalDeposit": 1,
+          "appliedPrice": 4.25,
+          "appliedPriceTTC": 5.1,
+          "isLocked": false
+        },
+        {
+          "product": {
+            "image1": "https://static.lefourgon.com/product_image/642d48206152f306303125.png",
+            "thumb150": "https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/642d48206152f306303125.png",
+            "id": 1587,
+            "name": "New French IPA",
+            "price": 5.667,
+            "quantity": 1,
+            "tva": 0.2,
+            "depositPrice": 0.2,
+            "isDiscountable": true,
+            "volume": 75,
+            "priceTTC": 6.8,
+            "volumePrice": 7.28,
+            "maxOrderable": 57,
+            "totalDepositPrice": 0.2,
+            "isMultiAddCartEnabled": true,
+            "discountPrice": [
+              {
+                "quantity": 6,
+                "percent": 1,
+                "price": 5.61,
+                "priceTTC": 6.73
+              },
+              {
+                "quantity": 12,
+                "percent": 2,
+                "price": 5.55,
+                "priceTTC": 6.66
+              },
+              {
+                "quantity": 24,
+                "percent": 3,
+                "price": 5.5,
+                "priceTTC": 6.6
+              }
+            ],
+            "unit": "cl",
+            "alcoholLevel": 6.5,
+            "isFresh": false,
+            "isBio": false,
+            "increment": 1,
+            "isAvailable": true,
+            "isLowStock": false
+          },
+          "quantity": 5,
+          "nbItems": 5,
+          "total": 28.34,
+          "totalTTC": 34,
+          "totalDeposit": 1,
+          "appliedPrice": 5.667,
+          "appliedPriceTTC": 6.8,
+          "isLocked": false
+        }
+      ]
+    }
+  ],
+  "total": {
+    "ht": 50.55,
+    "tva": 10.1,
+    "ttc": 60.65,
+    "deposit": 8.1,
+    "depositProducts": 2.1,
+    "depositPackages": 6,
+    "ttcWithDeposit": 68.75,
+    "minimumRequired": 20
+  }
+}

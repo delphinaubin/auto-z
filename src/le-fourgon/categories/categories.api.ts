@@ -14,7 +14,7 @@ export class CategoriesApi {
     this.axiosInstance = axios.create({
       baseURL: "https://lefourgon.com/api",
       headers: {
-        authorization: `Bearer ${userToken.accessToken}`,
+        authorization: `Bearer ${userToken.accessToken.value}`,
       },
     });
   }

@@ -5,7 +5,7 @@ export interface LeFourgonProductsResponse {
   count: number;
 }
 
-interface LeFourgonProduct {
+export interface LeFourgonProduct {
   id: number;
   name: string;
   description: string;
@@ -26,10 +26,10 @@ interface LeFourgonProduct {
 
   isAvailable: boolean;
 
-  packageType: LeFourgonProductPackageType;
+  packageType: LeFourgonProductPackageType | null;
 }
 
-interface LeFourgonProductPackageType {
+export interface LeFourgonProductPackageType {
   id: number;
   name: string;
   capacity: number;

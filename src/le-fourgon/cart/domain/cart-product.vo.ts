@@ -1,70 +1,60 @@
-import { ProductId } from "./product-id.vo";
-import { Name } from "../../domain/name.vo";
-import { Description } from "../../domain/description.vo";
-import { ImageUrl } from "../../domain/image-url.vo";
-import { Price } from "./price.vo";
-import { ProductQuantity } from "./product-quantity.vo";
-import { AlcoholLevel } from "./alcohol-level.vo";
 import { DomainObject } from "../../../shared/domain-object";
-import { Availability } from "./availability.vo";
-import { ProductVolume } from "./product-volume.vo";
-import { ProductPackaging } from "./product-packaging.vo";
+import { ProductId } from "../../products/domain/product-id.vo";
+import { Name } from "../../domain/name.vo";
+import { ImageUrl } from "../../domain/image-url.vo";
+import { ProductQuantity } from "../../products/domain/product-quantity.vo";
+import { Price } from "../../products/domain/price.vo";
+import { AlcoholLevel } from "../../products/domain/alcohol-level.vo";
+import { Availability } from "../../products/domain/availability.vo";
+import { ProductVolume } from "../../products/domain/product-volume.vo";
 
-interface ProductConstructorParams {
+interface CartProductConstructorParams {
   id: ProductId;
   name: Name;
-  description: Description;
   image: ImageUrl;
   thumbnail: ImageUrl;
+  maxOrderable: ProductQuantity;
   price: Price;
   depositPrice: Price;
-  maxOrderable: ProductQuantity;
   alcoholLevel: AlcoholLevel;
   availability: Availability;
   volume: ProductVolume;
-  packaging: ProductPackaging | null;
 }
 
-export class Product extends DomainObject<"Product"> {
+export class CartProduct extends DomainObject<"CartProduct"> {
   readonly id: ProductId;
   readonly name: Name;
-  readonly description: Description;
   readonly image: ImageUrl;
   readonly thumbnail: ImageUrl;
+  readonly maxOrderable: ProductQuantity;
   readonly price: Price;
   readonly depositPrice: Price;
-  readonly maxOrderable: ProductQuantity;
   readonly alcoholLevel: AlcoholLevel;
   readonly availability: Availability;
   readonly volume: ProductVolume;
-  readonly packaging: ProductPackaging | null;
 
   constructor({
     id,
     name,
-    description,
     image,
     thumbnail,
+    maxOrderable,
     price,
     depositPrice,
-    maxOrderable,
     alcoholLevel,
     availability,
     volume,
-    packaging,
-  }: ProductConstructorParams) {
+  }: CartProductConstructorParams) {
     super();
     this.id = id;
     this.name = name;
-    this.description = description;
     this.image = image;
     this.thumbnail = thumbnail;
+    this.maxOrderable = maxOrderable;
     this.price = price;
     this.depositPrice = depositPrice;
-    this.maxOrderable = maxOrderable;
     this.alcoholLevel = alcoholLevel;
     this.availability = availability;
     this.volume = volume;
-    this.packaging = packaging;
   }
 }

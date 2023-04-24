@@ -1,0 +1,3411 @@
+
+> auto-z@1.0.0 start
+> ts-node --project tsconfig.json src
+
+UserToken {
+  accessToken: AccessToken {
+    value: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODIzNTE3NjMsImV4cCI6MTY4MzY0Nzc2Mywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiZGVscGhpbl81QG1zbi5jb20ifQ.TavyV4tY-s2KJ_7bJUtfiNrTfYeo0Tivn1k80E9bmUCv4ClihTnVRb5Mc_IJmW963Q1C_P54rEyGWv669U8xN78MeL0o4awiQy_XDNOyaC1RvQWvFQueun23vADSEaLadFc7hgH8lFUYk-cM1-0PXgt_jvXPp0dYv4OI7rIkO2ci0984M5b8GTbSC5PkyISu-y08U_zTSE2XmuIjIGQbTsVXxrYz03eHe8Braw7RZR0K9ZI3wkP_ngrAxQ4z8ahLFWTZ1Ff16f9E18QFmgRtAF71QXdsnZGCwBZ3LYHt-Q2mM8fNR_aV2-9QHfXV0-yCGniRlWGraH5K8VUhIEgB6uWU1omvSL0ufYPPbrylc9JcnZ-xq8AAZkxt138OxpEcnRGOnf7cC74ywFKtinTMNAZqjYa4Vr7qGdOzGWo1UwOfr6EWx6pS3cEiAhJA9IUjYHAeCHATXTpQesdUOVxYdUAYAWJx9aKvxKt9r6RBwgPuJeR6zP5hxjBP1JReMtMtqJnmFjyCs-NP3Xlg3kttnA-IsGBmSrSBntLwQ1ohTxNNlIP0WG9eNqjN6YZsM3f0phkiOgC_qGDhGupXmsfrUtq7u6soZbSIHdYzBX5EwqCE7Mx3cympBunUBb8oRrJuzASR_ANm5hcxFnI-vtc9miHxDzrqxHfB8xBUvHfpBwY'
+  },
+  refreshToken: RefreshToken {
+    value: '200f2b5fe5f98113fe0f1e730c1ef5f23d53b052ef4f54a839486b501c58bfd8155bf0ccc16e73689387f8bd3c7c532feb54068ff21468206897c2d5f13dc29d'
+  }
+}
+{
+  products: ProductsResult {
+    products: [
+      Product {
+        id: ProductId { value: 609 },
+        name: Name { value: 'Coca-Cola Zéro' },
+        description: Description {
+          value: "<div>Coca-Cola Zéro, est une boisson rafraîchissante aux extraits végétaux, avec édulcorants, sans sucres ajoutés.<br>C'est une recette originale et un goût unique depuis 1886.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62e3e34f8143d719609180.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62e3e34f8143d719609180.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.616 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1047 },
+        name: Name { value: 'Limonade St Amand Citron' },
+        description: Description {
+          value: '<div>La limonade Saint-Amand saveur Citron est une boisson rafraîchissante gazéifiée.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63720b486e196974304288.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63720b486e196974304288.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.62 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 215 },
+        name: Name { value: 'Lait au chocolat Inex' },
+        description: Description {
+          value: '<div>Lait chocolaté stérilisé en contenant en verre consigné 20cl.<br>Le lait frais cru est collecté auprès de fermes laitières situées en Belgique. Ces fermes se situent dans un rayon de <strong>100 km maximum autour de leur entreprise laitière </strong>localisée à Bavegem<strong> </strong>afin de pouvoir transformer le lait dans les plus brefs délais.<br><br></div><div>Le procédé de stérilisation détruit toutes les bactéries, tout en préservant le goût, la valeur nutritionnelle et les vitamines.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/626a955a101b0868824293.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/626a955a101b0868824293.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.66 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 343 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 433 },
+        name: Name { value: 'Limonade St Amand Orange' },
+        description: Description {
+          value: '<div>La limonade Saint-Amand saveur Orange est une boisson rafraîchissante gazéifiée.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/627cd41f838f8145563764.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/627cd41f838f8145563764.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.66 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 203 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 434 },
+        name: Name { value: 'Limonade St Amand Citron vert' },
+        description: Description {
+          value: '<div>La limonade Saint-Amand saveur Citron est une boisson rafraîchissante gazéifiée.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/627cd41606d5d405823938.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/627cd41606d5d405823938.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.66 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 178 },
+        name: Name { value: 'Seven Up' },
+        description: Description {
+          value: "<div>Avec ses extraits de citron et de citron vert, 7UP représente l'alliance parfaite entre la fraîcheur des agrumes et le pétillement des bulles. C'est la boisson désaltérante à chaque instant de la journée.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6172c51374814245717775.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6172c51374814245717775.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.71 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 331 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 330 },
+        name: Name { value: 'Jus de Tomate' },
+        description: Description {
+          value: '<div>Ce jus de 100% tomates proposé par Pampryl saura vous faire le plein de vitamines. Les tomates qui viennent du Sud-Ouest de la France sont charnues, juteuses donnant au jus toute sa saveur.&nbsp;<br>Un vrai plaisir gustatif.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6266944e70a3e177543288.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6266944e70a3e177543288.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.71 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 0 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: false },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 445 },
+        name: Name { value: "Jus d'Orange" },
+        description: Description {
+          value: "<div>Ce jus d'orange proposé par Pampryl saura vous faire le plein de vitamines. Un vrai plaisir gustatif.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62850cc7d92f8903920671.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62850cc7d92f8903920671.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.71 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 446 },
+        name: Name { value: 'Jus de Pamplemousse Rose' },
+        description: Description {
+          value: '<div>Ce jus de pamplemousse rose proposé par Pampryl saura vous faire le plein de vitamines. Un vrai plaisir gustatif.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62850cb2055b6124028974.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62850cb2055b6124028974.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.71 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 94 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 449 },
+        name: Name { value: 'Jus de Pomme' },
+        description: Description {
+          value: '<div>Ce jus de pommes proposé par Pampryl saura vous faire le plein de vitamines. Un vrai plaisir gustatif.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62850c903cca7637508722.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62850c903cca7637508722.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.71 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 388 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 938 },
+        name: Name { value: "T'glacé de Lisbeth" },
+        description: Description {
+          value: '<div>Élément de base de l’ensemble de la gamme des Sources de Soultzmatt, l’eau de source Lisbeth offre également toute sa légèreté et sa fraîcheur à notre T’Glacé de Lisbeth.</div><div><br>Une boisson que vous aurez plaisir à déguster à la maison pour un moment convivial et que vous pourrez emmener partout grâce à son format nomade de 33cl.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63491bc228769621651308.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63491bc228769621651308.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.71 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 817 },
+        name: Name { value: 'Coca-Cola Classic' },
+        description: Description {
+          value: `<div>Coca-Cola, est une boisson rafraîchissante aux extraits végétaux.<br>C'est une recette originale et un goût unique depuis 1886.<br>"Ouvre 1 coca-cola, ouvre du bonheur !" ;)</div>`
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6329b0ce6bea2828355282.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6329b0ce6bea2828355282.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.711 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 937 },
+        name: Name { value: "Pom' de Lisbeth Schörle" },
+        description: Description {
+          value: '<div>En 2014 les Sources de Soultzmatt se lancent dans une nouvelle aventure et s’inspire du traditionnel Schörle allemand pour vous proposer une nouvelle boisson baptisée avec simplicité « Pom’de Lisbeth ».</div><div><br>Premier né des schörles alsaciens, Pom’ de Lisbeth est la promesse d’une découverte légère et rafraîchissante, associant le goût de la pomme et de la poire à une Lisbeth légèrement gazéifié. Une alliance savoureuse garantie sans sucres ajoutés.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63491bafcb905235058894.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63491bafcb905235058894.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.758 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 170 },
+        name: Name { value: 'Lipton Pêche' },
+        description: Description {
+          value: '<div>Lipton Ice Tea saveur Pêche est une boisson rafraîchissante aux extraits de thé et au goût de pêche.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6130ca731b22b954079057.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6130ca731b22b954079057.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.76 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 171 },
+        name: Name { value: 'Lipton Green' },
+        description: Description {
+          value: '<div>Boisson rafraîchissante aux extraits de thé vert.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6130cb2472af9900229707.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6130cb2472af9900229707.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.76 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 179 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 174 },
+        name: Name { value: 'Coca-Cola Zéro' },
+        description: Description {
+          value: "<div>Coca-Cola Zéro, est une boisson rafraîchissante aux extraits végétaux, avec édulcorants, sans sucres ajoutés.<br>C'est une recette originale et un goût unique depuis 1886.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/614882b958089653930938.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/614882b958089653930938.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.76 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 177 },
+        name: Name { value: 'Pepsi Max' },
+        description: Description {
+          value: '<div>Boisson gazeuse rafraîchissante aux extraits végétaux avec édulcorants.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/614882fc0b706148458759.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/614882fc0b706148458759.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.76 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 238 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 185 },
+        name: Name { value: 'Fuzetea Pêche Hibiscus' },
+        description: Description {
+          value: "<div>Fuze Tea, c'est le goût incomparable d'une boisson rafraîchissante à l'infusion de thé noir concentrée, avec jus de pêche, saveur thé et hibiscus.&nbsp;</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6139d9f388103177732104.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6139d9f388103177732104.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.76 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 398 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 940 },
+        name: Name { value: 'Elsass Cola' },
+        description: Description {
+          value: '<div>Élaboré à partir d’eau de source Lisbeth et d’arômes naturels, l’Elsass Cola est marqué par une subtile gazéification et des notes gourmandes de caramel.&nbsp;</div><div>Décliné en multiples formats, l’Elsass Cola accompagnera tous vos moments plaisir !</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63491be0a45aa145120607.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63491be0a45aa145120607.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.76 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 941 },
+        name: Name { value: 'Elsass Cola Zero' },
+        description: Description {
+          value: '<div>Élaboré à partir d’eau de source Lisbeth et d’arômes naturels, l’Elsass Cola est marqué par une subtile gazéification et des notes gourmandes de caramel.&nbsp;</div><div>Décliné en multiples formats, l’Elsass Cola accompagnera tous vos moments plaisir !</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63491beda3c79687547855.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63491beda3c79687547855.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.76 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1692 },
+        name: Name { value: 'Cristal Pils' },
+        description: Description {
+          value: `<div>On entend souvent "que c'est bon !" Rien d’étonnant, car Cristal est le fruit de l'expérience et de la passion de toute un collectif de talents. Poussés par notre amour commun du métier, nous nous appliquons à produire une pils chaque jour meilleure. Le résultat ? une bière au caractère aussi innovant que rafraîchissant. Une bière blonde de qualité que tout le monde peut savourer pleinement.<br><br>En 1928, nous brassons la première bière blonde à basse fermentation en Belgique. Une fierté qui nous anime encore aujourd'hui. Une fierté qui nous donne encore, chaque jour, cette soif de nous surpasser pour créer non seulement une pils toujours meilleure, mais une pils qui ose se réinventer pour rester au goût du jour. Qu’il s’agisse de sélectionner d’ingrédients locaux cultivés par des agriculteurs belges, d’utiliser d’électricité 100% verte pour le brassage ou de rechercher de nouvelles recettes qui élargissent la palette gustative des pils, notre rôle de pionnier nous pousse à aller toujours plus loin !</div>`
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/643fb2f5b6468223680736.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/643fb2f5b6468223680736.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.792 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 5 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 173 },
+        name: Name { value: 'Coca-Cola Classic' },
+        description: Description {
+          value: `<div>Coca-Cola, est une boisson rafraîchissante aux extraits végétaux.<br>C'est une recette originale et un goût unique depuis 1886.<br>"Ouvre 1 coca-cola, ouvre du bonheur !" ;)</div>`
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6130cc5024d94851525736.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6130cc5024d94851525736.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.81 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 176 },
+        name: Name { value: 'Pepsi Classic' },
+        description: Description {
+          value: '<div>Boisson gazeuse rafraîchissante aux extraits végétaux avec sucre et édulcorant.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6130ce0b5fdbb096028036.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6130ce0b5fdbb096028036.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.81 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 204 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 933 },
+        name: Name { value: 'Limonade Liness' },
+        description: Description {
+          value: '<div>C’est en 1969 que les Sources de Soultzmatt développent la limonade Liness. Elaborée à partir d’eau de source Lisbeth, de sucre et d’arômes naturels, la limonade Liness est aujourd’hui reconnue à travers l’Alsace pour sa saveur exceptionnelle.</div><div><br></div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63491b5bc9c22691410941.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63491b5bc9c22691410941.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.81 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 934 },
+        name: Name { value: 'Limonade Liness Orange' },
+        description: Description {
+          value: '<div>C’est en 1969 que les Sources de Soultzmatt développent la limonade Liness. Elaborée à partir d’eau de source Lisbeth, de sucre et d’arômes naturels, la limonade Liness est aujourd’hui reconnue à travers l’Alsace pour sa saveur exceptionnelle.</div><div>​</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63491b6c1226d859741034.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63491b6c1226d859741034.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.81 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1060 },
+        name: Name { value: 'Sprite' },
+        description: Description {
+          value: '<div>Boisson rafraîchissante aux arômes naturels de citron-citron vert avec sucre et édulcorant.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63720b3631cf5807813659.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63720b3631cf5807813659.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.81 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 107 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 180 },
+        name: Name { value: 'Orangina' },
+        description: Description {
+          value: '<div>Boisson gazeuse rafraîchissante aux fruits.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6130d04b7261c813617188.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6130d04b7261c813617188.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 183 },
+        name: Name { value: 'Jus Fruits de la Passion' },
+        description: Description {
+          value: '<div>Le jus de fruit Looza passion fruit est un nectar de fruits exotiques à base de fruits de la passion. Avec ce jus, envolez vous vers les Tropiques !</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62669507d30f3579603567.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62669507d30f3579603567.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 310 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 199 },
+        name: Name { value: 'Coca-Cola Cherry' },
+        description: Description {
+          value: '<div>Coca-Cola Cherry est une boisson rafraîchissante aux arôme naturels de cerise qui allie le goût unique de Coca-Cola Original à la saveur de la cerise.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/61488457d1871897363500.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/61488457d1871897363500.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 217 },
+        name: Name { value: 'Lait Demi-écrémé Inex' },
+        description: Description {
+          value: '<div>Lait demi-écrémé stérilisé en contenant en verre consigné 0,5L.<br>Le lait frais cru est collecté auprès de fermes laitières situées en Belgique. Ces fermes se situent dans un rayon de <strong>100 km maximum autour de leur entreprise laitière </strong>localisée à Bavegem<strong> </strong>afin de pouvoir transformer le lait dans les plus brefs délais.<br><br></div><div>Le procédé de stérilisation détruit toutes les bactéries, tout en préservant le goût, la valeur nutritionnelle et les vitamines.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/638f1d574f081708390158.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/638f1d574f081708390158.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.2 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 0 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: false },
+        volume: ProductVolume { quantity: 50, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 1 },
+          name: Name { value: 'Grands Formats (x12)' },
+          capacity: ProductQuantity { value: 12 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 250 },
+        name: Name { value: 'Jus ACE' },
+        description: Description {
+          value: '<div>La recette ACE Original de Looza est unique en son genre : ce nectar contient le jus de 8 fruits tropicaux et du jus de carotte.<br>Sa couleur orange vif et son goût agréable et doux plaisent aux petits et aux grands.<br><br>Le ‘ACE’ de Looza est la recette favorite des belges depuis 1999. Si cette variété est riche en vitamines A, C et E, elle est également vivement à conseiller à tout amateur de boissons rafraîchissantes au goût entier et doux.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6266948c3ac7c392735681.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6266948c3ac7c392735681.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 488 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 251 },
+        name: Name { value: 'Jus Tropical' },
+        description: Description {
+          value: '<div>Looza Tropical est un mélange de 8 jus et purées de fruits tropicaux: ananas, orange, fruit de la passion, citron vert, kiwi, banane, mangue et papaye. Faites le plein de vitamines dès le matin avec ce jus.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/626694d4e412f959133743.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/626694d4e412f959133743.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 381 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 387 },
+        name: Name { value: 'Lait au chocolat cécémel' },
+        description: Description {
+          value: `<div>Le lait au chocolat Cécémel est "le seul vrai" lait partiellement écrémé chocolaté, onctueux et savoureux.<br>Les jeunes comme les moins jeunes, tout le monde l'adore !<br><br></div>`
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/623894713a5cd325121616.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/623894713a5cd325121616.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 134 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 390 },
+        name: Name { value: 'Jus de Pamplemousse' },
+        description: Description {
+          value: '<div>Le jus de fruit Looza pamplemousse est un nectar très rafraîchissant, au goût légèrement amer très agréable.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62669426cbdcd363357359.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62669426cbdcd363357359.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 160 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 392 },
+        name: Name { value: "Jus d'Orange" },
+        description: Description {
+          value: "<div>Le jus de fruit Looza orange a un goût particulièrement doux équilibré avec un peu d'amertume et une richesse en vitamine C.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/626693c374bf0814002659.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/626693c374bf0814002659.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 300 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 393 },
+        name: Name { value: "Jus d'Ananas" },
+        description: Description {
+          value: '<div>Le jus de fruit Looza ananas a un goût fin et différent, avec une sensation veloutée en bouche. Avec ce jus, on se fend la poire !</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62669302b4f6a494813637.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62669302b4f6a494813637.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 394 },
+        name: Name { value: 'Jus de Raisin Rouge' },
+        description: Description {
+          value: '<div>Le jus de fruit Looza raisin rouge est un jus de raisin pur, sélectionnés avec soin et sans sucres ajoutés.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/626692d63ceab405434050.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/626692d63ceab405434050.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 301 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 395 },
+        name: Name { value: 'Jus de Poire' },
+        description: Description {
+          value: '<div>Le jus de fruit Looza poire a un goût doux, avec les notes sucrées des ananas mûrs, sans sucres ajoutés.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6266925fb0834096090978.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6266925fb0834096090978.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 413 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 418 },
+        name: Name { value: 'Gini' },
+        description: Description {
+          value: '<div>Le Gini est une boisson gazeuse rafraîchissante aux extraits de citron avec sucre et édulcorants aromatisée.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6253f36c68cda182932232.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6253f36c68cda182932232.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 160 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 421 },
+        name: Name { value: 'Lipton Citron Zéro' },
+        description: Description {
+          value: '<div>Lipton zéro saveur Citron est une boisson rafraîchissante aux extraits de thé.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/627cd1c0ca3f9139803661.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/627cd1c0ca3f9139803661.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.85 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 118 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 175 },
+        name: Name { value: 'Schweppes Indian Tonic' },
+        description: Description {
+          value: "<div>Boisson gazeuse rafraîchissante à l'extrait d'écorces de quinquina, avec sucre et édulcorants. A l'extrait d'écorces de quinquina.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6172c59e5ec6a594822219.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6172c59e5ec6a594822219.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.9 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 357 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 179 },
+        name: Name { value: 'Oasis Tropical' },
+        description: Description {
+          value: '<div>Oasis Tropical est une boisson rafraîchissante au bon goût de fruits exotiques, qui allie le plaisir des fruits au naturel de l’eau de source, sans conservateur et sans colorant artificiel, ni édulcorant.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/625006d725a5a422092959.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/625006d725a5a422092959.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.9 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 181 },
+        name: Name { value: 'Schweppes Agrumes' },
+        description: Description {
+          value: '<div>Schweppes Agrumes est une boisson aux saveurs irrésistibles d’orange, de pamplemousse, de citron vert &amp; de mandarine, sans colorant et sans arôme artificiel.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6130d0cd74794424516879.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6130d0cd74794424516879.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.9 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 450 },
+        name: Name { value: "Nectar d'Ananas" },
+        description: Description {
+          value: "<div>Ce jus d'ananas, 50% teneur en fruit, proposé par Pampryl saura vous faire le plein de vitamines. Un vrai plaisir gustatif.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62850c846c0dc668571525.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62850c846c0dc668571525.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.9 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 233 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 519 },
+        name: Name { value: 'Fuzetea Pêche' },
+        description: Description {
+          value: "<div>FuzeTea, c'est le goût incomparable d'une boisson rafraîchissante à l'infusion de thé noir concentrée, saveur pêche.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/629f31415b803031750043.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/629f31415b803031750043.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.9 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 375 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 555 },
+        name: Name { value: 'Tropico' },
+        description: Description {
+          value: '<div>TROPICO EXOTIQUE est une boisson rafraîchissante aux fruits et à l’eau de source, aromatisée, sans bulles, avec une teneur en fruits de 13,4 %.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62f223f0cd75a072724624.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62f223f0cd75a072724624.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.9 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 134 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 706 },
+        name: Name { value: 'Fuzetea Menthe Citron Vert' },
+        description: Description {
+          value: '<div>Boisson rafraîchissante aux extraits de thé vert et de menthe, saveur menthe et citron vert, avec sucre et édulcorant.<br>Faible en calories</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63b3fe33f172d648309765.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63b3fe33f172d648309765.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.9 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 236 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 936 },
+        name: Name { value: 'Miss Tonic' },
+        description: Description {
+          value: '<div>Elaborée et embouteillée au sein même des Sources de Soultzmatt, Miss Tonic se différencie des boissons sucrées déjà présentes sur le marché par sa composition.<br><br>Une amertume que nous avons voulue fine afin de proposer un produit qui puisse convenir au plus grand nombre.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63491b92410de160391916.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63491b92410de160391916.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.9 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1061 },
+        name: Name { value: 'Fanta' },
+        description: Description {
+          value: "<div>Savourez le goût unique et les sensations fruitées de Fanta orange !<br>Fanta contient du jus d'orange et des arômes naturels qui donnent ce bon goût fruité si savoureux et tellement rafraichissant !</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63720b2a53aa0227314122.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63720b2a53aa0227314122.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.9 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 274 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 216 },
+        name: Name { value: 'Lait Entier Inex' },
+        description: Description {
+          value: '<div>Lait entier en contenant en verre consigné 0,5 L<br>Le lait frais cru est collecté auprès de fermes laitières situées en Belgique. Ces fermes se situent dans un rayon de <strong>100 km maximum autour de leur entreprise laitière </strong>localisée à Bavegem<strong> </strong>afin de pouvoir transformer le lait dans les plus brefs délais.<br><br></div><div>Le procédé de stérilisation détruit toutes les bactéries, tout en préservant le goût, la valeur nutritionnelle et les vitamines.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/634d724692588522444558.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/634d724692588522444558.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.93 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.2 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 162 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 50, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 1 },
+          name: Name { value: 'Grands Formats (x12)' },
+          capacity: ProductQuantity { value: 12 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1617 },
+        name: Name { value: 'Lait Demi-écrémé 50cl Inza' },
+        description: Description {
+          value: '<div>Lait demi-écrémé stérilisé en contenant en verre consigné 100 cl.<br>Le lait frais cru est collecté auprès de fermes laitières situées en Belgique. Ces fermes se situent dans un rayon de <strong>100 km maximum autour de leur entreprise laitière.</strong><br><br></div><div>Le procédé de stérilisation détruit toutes les bactéries, tout en préservant le goût, la valeur nutritionnelle et les vitamines.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/642af1f332798026579109.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/642af1f332798026579109.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.948 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.2 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 192 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 50, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 1 },
+          name: Name { value: 'Grands Formats (x12)' },
+          capacity: ProductQuantity { value: 12 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 420 },
+        name: Name { value: 'Schweppes Agrumes Zéro' },
+        description: Description {
+          value: '<div>Le Schweppes Agrumes est une boisson gazeuse rafraîchissante aux saveurs de 4 agrumes : Orange, Pamplemousse, Citron vert et Mandarine.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6256a0dc19c13464034091.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6256a0dc19c13464034091.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.95 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 205 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1361 },
+        name: Name { value: 'Stella Artois' },
+        description: Description {
+          value: "<div>Stella Artois est le fruit d'une tradition brassicole belge qui remonte à 1366 à Louvain. ​Depuis plus de 600 ans, notre savoir-faire a donné vie à une bière dotée d'un goût harmonieux et d'une touche rafraîchissante. L'art et la science de la dégustation d'une Stella Artois reposent sur les meilleurs des ingrédients, le​ rituel de service en 9 étapes et le chalice spécialement conçu dans lequel il est préférable de la savourer. ​</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63f64c633677c350181598.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63f64c633677c350181598.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.958 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 5.2 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 86 },
+        name: Name { value: 'Jupiler Blonde' },
+        description: Description {
+          value: "<div>La Jupiler est la Pils la plus populaire de Belgique. Sa popularité lui a d'ailleurs valu d'avoir son nom associé à un championnat de football belge. Issue d'une sélection des meilleurs ingrédients, elle offre un goût léger et rafraîchissant qui s'apprécie en toutes circonstances.<br><br></div><div>La Jupiler dévoile une belle robe blonde surmontée d'une fine mousse blanche dégageant des arômes de céréales, de malt ainsi que de houblon. Côté dégustation, on retrouve des saveurs maltées et houblonnées qui apportent un caractère rafraîchissant à cette bière.</div><div>Une Pils pleine de fraîcheur qui vous accompagnera tout au long de la journée.</div><div>La bière la plus consommée de Belgique n'a pas fini de vous surprendre !</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62a350b525328543369600.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62a350b525328543369600.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 0.96 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 5.2 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 182 },
+        name: Name { value: 'Schweppes Mojito' },
+        description: Description {
+          value: '<div>Envie de fraîcheur? Laissez vous tenter par le Schweppes mojito avec ses saveurs de menthe et de citron. Idéal pour faire des virgin mojito !</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62305e78afc42090659289.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62305e78afc42090659289.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 275 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 422 },
+        name: Name { value: 'Schweppes Citron' },
+        description: Description {
+          value: '<div>Le Schweppes Citron est une boisson gazeuse rafraîchissante aux saveurs citron et citron vert.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/626a654391e02419783709.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/626a654391e02419783709.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 367 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 539 },
+        name: Name { value: 'Canada Dry' },
+        description: Description {
+          value: '<div>Le Soda gingembre de Canada Dry® a un goût doux, rafraîchissant et vif, aussi agréable qu’une matinée passée sur un lac. Préparé entièrement à partir d’arômes naturels, y compris de vrais arômes de gingembre, c’est un classique incontesté.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62bc17807116c088304806.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62bc17807116c088304806.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 239 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 671 },
+        name: Name { value: 'Schweppes Tonic Rose' },
+        description: Description {
+          value: '<div>Schweppes Tonic Rose aux extraits d’écorce de quinquina dans une version aux notes délicatement fruitées, à consommer seul ou en cocktail.&nbsp;<br><br></div><div><br></div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62ea359134380498172549.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62ea359134380498172549.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 183 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 167 },
+        name: Name { value: "L'Intense Cidre Brut" },
+        description: Description {
+          value: '<div>Ce cidre de caractère pur jus est issu de la première presse de pommes. Ce cidre Brut savoureux et équilibré relève des notes de fruits mûrs et une légère amertume.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6114e54df1009807313253.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6114e54df1009807313253.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.04 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 80 },
+        alcoholLevel: AlcoholLevel { value: 6 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 168 },
+        name: Name { value: 'Le Fruité Cidre Doux' },
+        description: Description {
+          value: '<div>Ce cidre de caractère pur jus est issu de la première presse de pommes. Ce cidre breton Doux, moelleux et fruité relève des notes de pommes compotées et de citron.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6114e56aa50c3905844221.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6114e56aa50c3905844221.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.04 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 146 },
+        alcoholLevel: AlcoholLevel { value: 2.5 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 187 },
+        name: Name { value: 'Grisette Blonde Bio Sans Gluten' },
+        description: Description {
+          value: "<div>La Grisette Blonde Bio est une bière pâle sans gluten, légère et très rafraîchissante. Refermentée en bouteille, elle libère des parfums d’une richesse incomparable à ceux rencontrés à cette densité. La mousse est fine et blanche, et sa robe jaune-paille. L’amertume est agréablement perceptible.<br>Elle a d'ailleurs été élue, en 2016, meilleure bière de spécialité au World Beer Award.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62a352718f3f5039295481.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62a352718f3f5039295481.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.04 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 5.5 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 212 },
+        name: Name { value: 'Schweppes Ginger Ale' },
+        description: Description {
+          value: "<div>Schweppes n'a pas fini de vous satisfaire en vous proposant un Ginger ale subtil et délicatement épicé, qui saura plaire à vos papilles. C’est un produit qui se marie très bien avec les alcools bruns ou pour faire les fameux cocktails Moscow Mule.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6172c2e15292f150135462.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6172c2e15292f150135462.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.04 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 320 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 397 },
+        name: Name { value: 'Jus Pomme Bio' },
+        description: Description {
+          value: '<div>Le jus de pomme Pajottenlander a une couleur jaune à jaune ocre clair. Les arômes des innombrables variétés de pommes de vergers à hautes tiges s’unissent dans un goût sucré et légèrement acidulé.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6266922841948031269320.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6266922841948031269320.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.04 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 286 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1255 },
+        name: Name { value: 'Stella 0,0%' },
+        description: Description {
+          value: "<div>La Stella est caractérisée par une amertume houblonnée prononcée aux notes florales. Elle contient seulement 60 calories sans même une goutte d'alcool.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63c58fc14f867769418103.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63c58fc14f867769418103.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.04 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 135 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 85 },
+        name: Name { value: 'Hoegaarden Blanche' },
+        description: Description {
+          value: "<div>La Hoegaarden est une bière belge blanche qui compte parmi les plus connues hors du royaume de Belgique.<br>&nbsp;<br>Elle est brassée avec de la coriandre et des zestes de citron pour plus de goût et de fraîcheur. La Hoegaarden présente une intrigante robe d'un blond troublé qui s'explique par le fait que cette bière n'est pas filtrée avant l'embouteillage et contient donc encore des levures en suspend.<br><br>Elle se pare d'une belle mousse blanche crémeuse qui est traversée par une fine effervescence. Elle dégage un jolie nez fruité et épicé évoquant les agrumes, la coriandre et le houblon. En bouche, on retrouve des saveurs très similaires aux arômes perçus avec un goût fruité et une douce présence de la coriandre. Une belle amertume se développe sur la fin de bouche et affirme le caractère consensuel de cette bière blanche qui est un bel exemple du style des bières blanches belges.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/627cd5ed26fb5742884956.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/627cd5ed26fb5742884956.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.08 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 160 },
+        alcoholLevel: AlcoholLevel { value: 4.9 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 130 },
+        name: Name { value: 'Jupiler 0,0%' },
+        description: Description {
+          value: "<div>La Jupiler sans alcool a tout de la vraie Jupiler. Elle est désalcoolisée après fermentation afin de garder les mêmes goûts que la bière. Sa robe blonde pâle dévoile des arômes de malt, d'houblon et de fruits.<br>Mousse et pétillance identiques à la Jupiler traditionnelle, un peu plus maltée, plus caramélisée et sucrée que la version classique.&nbsp;</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62a350e0cb474148353443.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62a350e0cb474148353443.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.09 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 111 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 398 },
+        name: Name { value: 'Jus de Pomme Cerise Bio' },
+        description: Description {
+          value: '<div>Le jus de pomme et cerise Pajottenlander a une couleur rouge foncé. L’arôme est frais et sucré avec un goût prononcé de cerises doux et acidulé.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/626691fa66a0b941984595.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/626691fa66a0b941984595.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.09 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 80 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 399 },
+        name: Name { value: 'Jus de Pomme Rhubarbe Bio' },
+        description: Description {
+          value: '<div>Le jus de pomme et rhubarbe Pajottenlander a une couleur jaune rosé. L’arôme est doux avec accent frais et acidulé.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/626691d04eee4183407348.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/626691d04eee4183407348.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.09 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 207 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 400 },
+        name: Name { value: 'Jus de Légumes Bio' },
+        description: Description {
+          value: '<div>Le jus aux Fruits des Bois Pajottenlander a une couleur orange rouge. L’arôme est frais, acidulé et doux avec un goût prononcé de fruits des bois.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62669192aa0f9897241593.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62669192aa0f9897241593.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.09 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 68 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1566 },
+        name: Name { value: 'Minute Maid Pomme' },
+        description: Description {
+          value: '<div>Le jus de fruits Minute Maid Pomme est délicieusement désaltérant. Ce jus de pommes délicatement acidulé vous offre une savoureuse sensation de fraîcheur, pour bien démarrer votre journée !</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/643fb22c8378c803163243.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/643fb22c8378c803163243.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.137 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 240 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1567 },
+        name: Name { value: 'Minute Maid Orange' },
+        description: Description {
+          value: "<div>Le jus d'oranges gorgées de soleil de Minute Maid Orange est délicieusement désaltérant. Ce jus de fruits vous offre une savoureuse sensation de fraîcheur, pour bien démarrer votre journée !</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/643fb23c8df38930173313.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/643fb23c8df38930173313.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.137 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 240 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1568 },
+        name: Name { value: 'Minute Maid Multifruit' },
+        description: Description {
+          value: '<div>Nectar multifruit et légume à base de jus concentrés.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/643fb24830bc0500433621.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/643fb24830bc0500433621.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.137 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 240 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1569 },
+        name: Name { value: 'Minute Maid Ananas' },
+        description: Description {
+          value: '<div>Commencez votre journée du bon pied avec Minute Maid Ananas.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/643fb25329580071900790.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/643fb25329580071900790.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.137 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 236 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1570 },
+        name: Name { value: 'Minute Maid Tomate' },
+        description: Description {
+          value: "<div>Minute Maid Tomate ravira tous les amateurs de jus de tomates. Dégustez-le au naturel, ou avec une touche de sel de céleri, de jus de citron ou de piment. Idéal pour bien démarrer votre journée, il se marie parfaitement avec d'autres boissons !</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/643fb25fdb71b102633670.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/643fb25fdb71b102633670.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.137 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 216 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 488 },
+        name: Name { value: 'Fritz Kola' },
+        description: Description {
+          value: '<div>Limonade à base de caféinée au goût du cola.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/627cd70fb7e1b296178596.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/627cd70fb7e1b296178596.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.14 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 138 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 489 },
+        name: Name { value: 'Fritz Kola Sans sucre' },
+        description: Description {
+          value: '<div>Le Fritz Kola Sans sucre est une limonade caféinée au goût de cola.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62a6ee250cf83344688715.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62a6ee250cf83344688715.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.14 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 46 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 490 },
+        name: Name { value: 'Fritz Rhubarbe' },
+        description: Description {
+          value: '<div>Limonade à base de jus de rhubarbe biologique.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/627cd6f725c67417659915.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/627cd6f725c67417659915.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.14 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 117 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 493 },
+        name: Name { value: 'Fritz Orange' },
+        description: Description {
+          value: '<div>La limonade Fritz Orange a un goût fruité avec&nbsp; une douceur due à la forte teneur en fruits qui transportent vos papilles.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/627cd6eb3d4a3354396471.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/627cd6eb3d4a3354396471.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.14 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 81 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1256 },
+        name: Name { value: 'Hoegaarden Rosée 0,0%' },
+        description: Description {
+          value: "<div>Hoegaarden Rosée 0,0 % est une bière belge légère, sans alcool et à la rose, au goût de framboise. C'est une bière de blé belge unique et authentique dont la tradition de brassage remonte à 1445. Lorsque vous combinez le goût frais et fruité des framboises et une touche fleurie et boisée avec une bière de blé primée, vous obtenez le caractère délicieusement individuel d'une véritable Hoegaarden Rosée. Elle contient seulement 70 calories sans même une goutte d'alcool.<br><br></div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63c58fcd45d39984042366.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63c58fcd45d39984042366.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.14 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 109 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 310 },
+        name: Name { value: 'Biolégère' },
+        description: Description {
+          value: '<div>La Biolégère est une bière biologique de fermentation haute, refermentée en bouteille.<br>Légère et rafraîchissante, cette bière blonde présente des arômes et goûts de malt et d’agrumes.<br>La refermentation en bouteille et le houblonnage adapté en font une bière parfaitement équilibrée et relativement complexe pour une teneur en alcool aussi faible.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62b19a608f1e6843124549.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62b19a608f1e6843124549.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.17 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 165 },
+        alcoholLevel: AlcoholLevel { value: 3.5 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 548 },
+        name: Name { value: 'Jus de Pomme Ananas Bio' },
+        description: Description {
+          value: '<div>Jus de pomme-ananas Pajottenlander a une couleur jaune claire et est riche en fibres.<br>L’arôme est tropical et frais avec une touche de pomme.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62b4366a979a8148464186.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62b4366a979a8148464186.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.18 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 84 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 812 },
+        name: Name { value: 'Jus de Pomme' },
+        description: Description {
+          value: '<div>Le Jus de Pomme Fruits des Weppes a un goût succulent, une authenticité et une générosité incomparable... Ils sont partenaires de la marque Saveur en Or, gage de qualité 100% retrouvée !&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63243d238153b774888847.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63243d238153b774888847.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.18 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 546 },
+        name: Name { value: 'Jus Multifruits Bio' },
+        description: Description {
+          value: '<div>Le jus multifruits a une couleur orange chaleureuse. L’arôme est tropical et doux, soutenu par un accent acidulé d’acérola.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62b4363124523005233059.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62b4363124523005233059.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.23 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 452 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 547 },
+        name: Name { value: 'Jus Orange Bio' },
+        description: Description {
+          value: '<div>Le jus d’orange Pajottenlander a une couleur jaune orange clair.<br>Le goût est frais, acidulé et riche en arômes naturels.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62b43649ab535500904619.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62b43649ab535500904619.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.23 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 183 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 20, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 129 },
+        name: Name { value: 'Lindemans Kriek Rouge' },
+        description: Description {
+          value: "<div>Pour la réalisation de cette Kriek, la brasserie utilise un filtrat de griottes fraîches afin de recueillir toute l'intensité de l'arôme naturel de cerise. La macération de ce dernier avec le lambic dure trois jours pour ensuite laisser place à une fermentation spontanée de la bière. Une refermentation de la bière se produit en bouteille.<br><br>Cette bière à la robe rouge claire et la mousse rose dévoile de doux arômes de cerises. En bouche, un mélange de saveurs boisées, de cerises et de fruits est perceptible. On décèle également une légère acidité qui permet d'apporter toute la rondeur à cette bière.&nbsp;<br>&nbsp;<br>La Kriek Lindemans peut être aussi bien servie en apéritif qu'en accompagnement d'un plat à base de fromage de chèvre. Elle peut également être utilisée comme base de sorbet à la cerise.&nbsp;</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/609437c51e8ba776690248.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/609437c51e8ba776690248.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.25 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 159 },
+        alcoholLevel: AlcoholLevel { value: 3.4 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 276 },
+        name: Name { value: 'Bouchon en silicone' },
+        description: Description {
+          value: '<div>Bouchon en silicone réutilisable pour refermer les bouteilles entamées afin de permettre une conservation optimale de vos bouteilles à capsule 25cl, 33cl et 1L.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62441209ab210814311251.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62441209ab210814311251.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.25 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: null, unit: 'cl' },
+        packaging: null
+      },
+      Product {
+        id: ProductId { value: 89 },
+        name: Name { value: 'Leffe Blonde' },
+        description: Description {
+          value: "<div>La Leffe blonde est une bière belge d'abbaye qui possède un caractère à la taille de sa renommée.<br><br>Brassée par l'abbaye Leffe depuis 1240, elle a su convaincre et s'imposer comme une référence au fil des siècles et se vend aujourd'hui jusqu'en Chine.<br><br>La Leffe blonde se pare dans le verre d'une belle robe d'un blond cuivrée coiffée d'une mousse onctueuse et persistante. Elle développe une belle effervescence, modérée mais durable.<br><br>Du verre s'échappe des arômes maltés puissants de céréales et de maïs ainsi que des senteurs de banane et de clou de girofle.<br><br>En bouche, elle présente une rondeur maltée de caramel accompagnée de saveurs fruitées, et d'une pointe épicée associable à la levure. Une touche métallique est également perceptible et précède l'arrivée du houblon. Celui-ci est à son tour chassé par l'alcool qui prend de l'ampleur en fin de bouche.</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62a35320011e4718958091.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62a35320011e4718958091.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.29 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 358 },
+        alcoholLevel: AlcoholLevel { value: 6.6 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 747 },
+        name: Name { value: 'Lindemans Faro' },
+        description: Description {
+          value: '<div>Le lambic est l’une des bières les plus vieilles du monde. Selon certains, c’est également la meilleure même si son acidité si particulière ne plait pas à tous les palais. Pour compenser cette acidité, certains décidèrent d’y ajouter du sucre. C’est ainsi qu’est né le Faro-Lambic. L’ajout de sucre candi au lambic fut une révélation du temps de Brueghel. (Certains avancent même que, sans Faro-Lambic, Brueghel aurait été privé d’inspiration et serait resté un vulgaire peintre du dimanche dont les croutes n’auraient même pas trouvé acquéreur au marché aux puces.) Jusqu’au 19ème siècle, le Faro-Lambic était très répandu dans la région bruxelloise.&nbsp;<br><br>Particulièrement apprécié après l’effort, un Faro-Lambic se boit sans effort. Et avec beaucoup de plaisir.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62f4c3bf93285088186243.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62f4c3bf93285088186243.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.33 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 84 },
+        alcoholLevel: AlcoholLevel { value: 4.5 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 818 },
+        name: Name { value: 'Hommel Bier' },
+        description: Description {
+          value: '<div>La Hommel Bier Blonde est une bière de haute fermentation avec refermentation.&nbsp;<br>Elle possède une robe dorée-ambrée et dégage au nez un arôme épicé et de levure et dévoile un agréable goût doux, malté et fruité.<br>Cette bière est produite par la Brasserie Van Eecke.&nbsp;</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/633ab53c2dc0c357844275.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/633ab53c2dc0c357844275.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.33 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 403 },
+        alcoholLevel: AlcoholLevel { value: 7.5 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1253 },
+        name: Name { value: 'Leffe Blonde 0,0%' },
+        description: Description {
+          value: "<div>Délicate mais caractéristique, Leffe Blonde 0,0% accompagnera avec légèreté vos repas et leur donnera une touche de saveur supplémentaire. Elle est marquée par des des notes de vaille et de clou de girofle.</div><div>Elle s’associe parfaitement avec: le fromage d'abbaye, les coquilles Saint-Jacques et la crème brûlée.<br><br>Température de service recommandée: 5 °C</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63c58fb3e3d94696382224.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63c58fb3e3d94696382224.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.33 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 143 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 120 },
+        name: Name { value: 'Lait Demi-écrémé Inex' },
+        description: Description {
+          value: '<div>Lait demi-écrémé stérilisé en contenant en verre consigné 1L.<br>Le lait frais cru est collecté auprès de fermes laitières situées en Belgique. Ces fermes se situent dans un rayon de <strong>100 km maximum autour de leur entreprise laitière </strong>localisée à Bavegem<strong> </strong>afin de pouvoir transformer le lait dans les plus brefs délais.<br><br></div><div>Le procédé de stérilisation détruit toutes les bactéries, tout en préservant le goût, la valeur nutritionnelle et les vitamines.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/634d731761cfe005343465.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/634d731761cfe005343465.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.37 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.2 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 100, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 1 },
+          name: Name { value: 'Grands Formats (x12)' },
+          capacity: ProductQuantity { value: 12 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 813 },
+        name: Name { value: 'Jus de Pomme Poire' },
+        description: Description {
+          value: '<div>Le Jus de Pomme Poire Fruits des Weppes a un goût succulent, une authenticité et une générosité incomparable... Ils sont partenaires de la marque Saveur en Or, gage de qualité 100% retrouvée !<br><br><strong>Process de fabrication :<br></strong>1-Sélection des fruits<br>2-Lavage<br>3-Extraction du jus<br>4-Pasteurisation<br>5-Mise en bouteille à chaud<br>6-Refroidissement</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63623846aa18a031791625.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63623846aa18a031791625.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.37 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 81 },
+        name: Name { value: 'Cuvée des Trolls Blonde' },
+        description: Description {
+          value: '<div>La cuvée des Trolls est née en 2000 dans les cuves de la micro-brasserie Le Brasse-Temps créée par la brasserie Dubuisson à Louvain-La-Neuve.&nbsp;<br>C’est une bière blonde non filtrée et donc naturellement trouble.&nbsp;<br>L’utilisation d’écorces d’oranges séchées lors de l’ébullition lui confère un arôme fruité des plus agréables, qui s’harmonise au mieux avec un goût tout en rondeur et finesse. La cuvée des Trolls, une bière très sympathique. Servie entre 6° à 8°C, la Cuvée des Trolls séduira tous les palais!</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62b5bcf3f196d610062970.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62b5bcf3f196d610062970.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.38 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 444 },
+        alcoholLevel: AlcoholLevel { value: 7 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 528 },
+        name: Name { value: 'Liefmans Fruitesse' },
+        description: Description {
+          value: '<div>La Liedmans Fruitesse est une bière rouge aux saveurs fruitées et douces de baies, de fruits rouges, de fraises, de framboise et de sureau.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6294c4bed5a17607352267.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6294c4bed5a17607352267.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.42 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 25 },
+        alcoholLevel: AlcoholLevel { value: 3.8 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 532 },
+        name: Name { value: 'Lindemans Framboise' },
+        description: Description {
+          value: '<div>La Lindemans Framboise est une bière fruitée à la saveur dominante de framboise, à la fermentation spontanée et produite en Belgique.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6294c4c8ce328633624591.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6294c4c8ce328633624591.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.42 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 45 },
+        alcoholLevel: AlcoholLevel { value: 2.5 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 811 },
+        name: Name { value: 'Jus de Pomme Framboise' },
+        description: Description {
+          value: '<div>Le Jus de Pomme Framboise Fruits des Weppes a un goût succulent, une authenticité et une générosité incomparable... Ils sont partenaires de la marque Saveur en Or, gage de qualité 100% retrouvée !</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/63243d0c8ae47470880426.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/63243d0c8ae47470880426.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.42 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 488 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 25, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1115 },
+        name: Name { value: 'Lait Écrémé Inza' },
+        description: Description {
+          value: '<div>Lait écrémé stérilisé en contenant en verre consigné 100 cl.<br>Le lait frais cru est collecté auprès de fermes laitières situées en Belgique. Ces fermes se situent dans un rayon de <strong>100 km maximum autour de leur entreprise laitière.</strong><br><br></div><div>Le procédé de stérilisation détruit toutes les bactéries, tout en préservant le goût, la valeur nutritionnelle et les vitamines.</div>'
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/6377afc0cd877062679353.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/6377afc0cd877062679353.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.42 },
+          vat: Vat { value: 0.055 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.2 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 500 },
+        alcoholLevel: AlcoholLevel { value: 0 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 100, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 1 },
+          name: Name { value: 'Grands Formats (x12)' },
+          capacity: ProductQuantity { value: 12 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 1001 },
+        name: Name { value: "Ch'ti Blonde" },
+        description: Description {
+          value: "<div>Première bière produite par la Brasserie Castelain en <strong>1979</strong>, la <strong>Ch'ti blonde</strong> s'est rapidement imposée comme une <strong>référence</strong> dans le Nord de la France.</div><div>Après une période de garde de <strong>6 semaines</strong> cette bière est prête à se laisser découvrir !&nbsp;</div><div><br>Sous une élégante <strong>robe jaune-orange</strong>, elle offre un <strong>bouquet aromatique</strong> des plus fin qui oscille entre l'influence des <strong>malts</strong> et des <strong>houblons</strong>. L'ensemble <strong>floral et sucré</strong> se retrouve en bouche.</div><div><strong><br>Entre douceur et amertume</strong>, chacun des ingrédients s'exprime avec <strong>sagesse</strong>. Afin de profiter des <strong>saveurs à la fois fleuries et mielleuses</strong> de cette Ch'ti Blonde, dégustez-la <strong>bien fraîche</strong> dans son <strong>verre Ch'ti</strong>.&nbsp;</div><div><br>N'hésitez pas non plus à l'associer à des <strong>plats épicés</strong> ou <strong>relevés</strong> comme une <strong>paëlla</strong> par exemple.&nbsp;</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/635647fde8c8b293377587.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/635647fde8c8b293377587.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.46 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 228 },
+        alcoholLevel: AlcoholLevel { value: 6.8 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 137 },
+        name: Name { value: 'Lupulus Pils Bio' },
+        description: Description {
+          value: "<div>La Lupulus Pils Bio est une bière de fermentation basse, non filtrée et non pasteurisée.</div><div>Robe pâle et très légèrement voilée, la Lupulus Pils Bio est surmontée d'une mousse naturelle.</div><div><br></div><div>Longue en bouche, elle vous offre en finale une touche de fraîcheur inégalée.<br><br></div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62b5bd4d25511545049619.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62b5bd4d25511545049619.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.5 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.1 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 132 },
+        alcoholLevel: AlcoholLevel { value: 5 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 33, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 6 },
+          name: Name { value: 'Petits Formats (x20)' },
+          capacity: ProductQuantity { value: 20 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      },
+      Product {
+        id: ProductId { value: 321 },
+        name: Name { value: 'Bock du Moulin' },
+        description: Description {
+          value: "<div>Légèrement ambrée et limpide, sa mousse onctueuse laisse échapper d'agréables arômes de malt. Des notes prononcées que l'on retrouve à la dégustation avec des saveurs grillées relevées par une amertume légère.&nbsp;</div>"
+        },
+        image: ImageUrl {
+          value: 'https://static.lefourgon.com/product_image/62b199e92c09e249912734.png'
+        },
+        thumbnail: ImageUrl {
+          value: 'https://static.lefourgon.com/cdn-cgi/image/width=150,quality=100/product_image/62b199e92c09e249912734.png'
+        },
+        price: Price {
+          amountExcludingVat: Amount { value: 1.5 },
+          vat: Vat { value: 0.2 }
+        },
+        depositPrice: Price {
+          amountExcludingVat: Amount { value: 0.2 },
+          vat: Vat { value: 0 }
+        },
+        maxOrderable: ProductQuantity { value: 356 },
+        alcoholLevel: AlcoholLevel { value: 3.9 },
+        availability: Availability { value: true },
+        volume: ProductVolume { quantity: 75, unit: 'cl' },
+        packaging: ProductPackaging {
+          id: ProductPackagingId { value: 1 },
+          name: Name { value: 'Grands Formats (x12)' },
+          capacity: ProductQuantity { value: 12 },
+          depositPrice: Price {
+            amountExcludingVat: Amount { value: 3 },
+            vat: Vat { value: 0 }
+          }
+        }
+      }
+    ],
+    pagination: PaginatedResult { offset: 0, limit: 100, count: 501 }
+  }
+}
