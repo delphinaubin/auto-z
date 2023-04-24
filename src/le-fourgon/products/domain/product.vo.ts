@@ -22,7 +22,7 @@ interface ProductConstructorParams {
   alcoholLevel: AlcoholLevel;
   availability: Availability;
   volume: ProductVolume;
-  packaging: ProductPackaging
+  packaging: ProductPackaging | null;
 }
 
 export class Product extends DomainObject<"Product"> {
@@ -37,7 +37,7 @@ export class Product extends DomainObject<"Product"> {
   readonly alcoholLevel: AlcoholLevel;
   readonly availability: Availability;
   readonly volume: ProductVolume;
-  readonly packaging: ProductPackaging;
+  readonly packaging: ProductPackaging | null;
 
   constructor({
     id,

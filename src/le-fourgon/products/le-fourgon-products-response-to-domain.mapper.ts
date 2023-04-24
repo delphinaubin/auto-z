@@ -58,7 +58,10 @@ export function leFourgonProductToDomainMapper(
       quantity: product.volume,
       unit: product.unit,
     }),
-    packaging: leFourgonProductPackagingToDomain(product.packageType),
+    packaging:
+      product.packageType === null
+        ? null
+        : leFourgonProductPackagingToDomain(product.packageType),
   });
 }
 

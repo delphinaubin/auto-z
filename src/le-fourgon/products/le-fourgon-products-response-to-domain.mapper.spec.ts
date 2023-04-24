@@ -15,12 +15,14 @@ import { ProductVolume } from "./domain/product-volume.vo";
 import { PaginatedResult } from "./domain/paginated-result.vo";
 import { ProductPackaging } from "./domain/product-packaging.vo";
 import { ProductPackagingId } from "./domain/product-packaging-id.vo";
+import { strict as assert } from "assert";
 
 describe("toDomainProductsResult", () => {
-  it("maps a response to domain entities", () => {
-    const mapper = new LeFourgonProductsResponseToDomainMapper();
+  let mapper: LeFourgonProductsResponseToDomainMapper;
+  let aLeFourgonProductsResponse: LeFourgonProductsResponse;
 
-    const aLeFourgonProductsResponse: LeFourgonProductsResponse = {
+  beforeEach(() => {
+    aLeFourgonProductsResponse = {
       offset: 0,
       limit: 10,
       count: 2,
@@ -52,6 +54,10 @@ describe("toDomainProductsResult", () => {
       ],
     };
 
+    mapper = new LeFourgonProductsResponseToDomainMapper();
+  });
+
+  it("maps a response to domain entities", () => {
     const result = mapper.toDomainProductsResult(aLeFourgonProductsResponse);
 
     expect(result).toBeInstanceOf(ProductsResult);
@@ -100,6 +106,7 @@ describe("toDomainProductsResult", () => {
     expect(product.volume.unit).toEqual("cl");
 
     expect(product.packaging).toBeInstanceOf(ProductPackaging);
+    assert(product.packaging !== null);
     expect(product.packaging.id).toStrictEqual(ProductPackagingId.of(1));
     expect(product.packaging.name).toStrictEqual(
       Name.of("Grands Formats (x12)")
@@ -111,5 +118,11 @@ describe("toDomainProductsResult", () => {
       Amount.of(3)
     );
   });
-});
 
+  it("handles a null package", () => {
+    aLeFourgonProductsResponse.products[0].packageType = null;
+    const result = mapper.toDomainProductsResult(aLeFourgonProductsResponse);
+    const [product] = result.products;
+    expect(product.packaging).toBeNull();
+  });
+});

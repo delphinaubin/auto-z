@@ -26,7 +26,7 @@ export interface LeFourgonProduct {
 
   isAvailable: boolean;
 
-  packageType: LeFourgonProductPackageType;
+  packageType: LeFourgonProductPackageType | null;
 }
 
 export interface LeFourgonProductPackageType {
